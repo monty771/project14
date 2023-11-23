@@ -26,7 +26,7 @@
         android:id="@+id/btn_solarpan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Solar Panels"
+        android:text="solar"
         tools:layout_editor_absoluteX="141dp"
         tools:layout_editor_absoluteY="251dp" />
 
