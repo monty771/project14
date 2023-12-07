@@ -8,57 +8,80 @@
 
     <Button
         android:id="@+id/btn_signup"
-        android:layout_width="78dp"
-        android:layout_height="63dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="231dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="247dp"
         android:text="Sign Up"
-        tools:layout_editor_absoluteX="231dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_windfarm"
+        app:layout_constraintEnd_toStartOf="@+id/btn_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_login"
-        android:layout_width="85dp"
+        android:layout_width="0dp"
         android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
         android:text="Login"
-        tools:layout_editor_absoluteX="322dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_signup"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_solarpan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="40dp"
         android:text="solar"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="251dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_windfarm"
+        app:layout_constraintStart_toStartOf="@+id/btn_windfarm" />
 
     <Button
         android:id="@+id/btn_windfarm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="27dp"
         android:text="Windmill Farms"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="326dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_elcar"
+        app:layout_constraintEnd_toEndOf="@+id/btn_chargepoint"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signup" />
 
     <Button
         android:id="@+id/btn_exit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
         android:text="Exit"
-        tools:layout_editor_absoluteX="160dp"
-        tools:layout_editor_absoluteY="663dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_chargepoint" />
 
     <Button
         android:id="@+id/btn_elcar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginBottom="20dp"
         android:text="Electric Cars"
-        tools:layout_editor_absoluteX="141dp"
-        tools:layout_editor_absoluteY="401dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_chargepoint"
+        app:layout_constraintStart_toStartOf="@+id/btn_chargepoint"
+        app:layout_constraintTop_toBottomOf="@+id/btn_windfarm" />
 
     <Button
         android:id="@+id/btn_chargepoint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="146dp"
         android:text="Charging points for cars"
-        tools:layout_editor_absoluteX="104dp"
-        tools:layout_editor_absoluteY="469dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btn_exit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_elcar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
