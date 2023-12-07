@@ -40,5 +40,33 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(s);
             }
         });
+
+        Button windfarms = (Button) findViewById(R.id.btn_windfarm);
+        windfarms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent w = new Intent(MainActivity.this,);
+                startActivity(w);
+            }
+        });
+
+        Button elecCar = (Button) findViewById(R.id.btn_elcar);
+        elecCar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent e = new Intent(MainActivity.this,);
+                startActivity(e);
+            }
+        });
+
+        Button chargePoint = (Button) findViewById(R.id.btn_chargepoint);
+        chargePoint.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent cP = new Intent(MainActivity.this,);
+                startActivity(cP);
+            }
+        });
+
     }
 }
